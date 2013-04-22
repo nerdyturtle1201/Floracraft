@@ -16,7 +16,7 @@ public class FlameThorn extends BlockFlower {
     @SideOnly(Side.CLIENT)
     public void registerIcons(IconRegister iconRegister) {
 
-        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName2());
+        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
     }
 
 }
