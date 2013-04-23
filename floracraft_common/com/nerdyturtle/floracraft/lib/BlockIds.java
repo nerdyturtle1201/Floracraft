@@ -20,6 +20,7 @@ public class BlockIds {
     public static int SKULLBRAMBLE_DEFAULT = 2016;
     public static int SUNDEW_DEFAULT = 2017;
     public static int WATERPEARLPLANT_DEFAULT = 2018;
+    public static int RESEARCHTABLE_DEFAULT = 2018;
 
     
     public static int AEROLILY;
@@ -41,4 +42,5 @@ public class BlockIds {
     public static int SKULLBRAMBLE;
     public static int SUNDEW;
     public static int WATERPEARLPLANT;
+    public static int RESEARCHTABLE;
 }

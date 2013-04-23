@@ -1,6 +1,7 @@
 package com.nerdyturtle.floracraft.item;
 
 import com.nerdyturtle.floracraft.block.FloracraftBlocks;
+import com.nerdyturtle.floracraft.core.FloracraftToolMaterial;
 import com.nerdyturtle.floracraft.lib.ItemIds;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -40,7 +41,7 @@ public class FloracraftItems {
         lyreplantseeds = new LyrePlantSeeds(ItemIds.LYREPLANTSEEDS, FloracraftBlocks.lyreplant.blockID, Block.tilledField.blockID);
         waterpearlseeds = new WaterPearlSeeds(ItemIds.WATERPEARLSEEDS, FloracraftBlocks.waterpearlplant.blockID, Block.tilledField.blockID);
         lavapearlseeds = new LavaPearlSeeds(ItemIds.LAVAPEARLSEEDS, FloracraftBlocks.lavapearlplant.blockID, Block.tilledField.blockID);
-        //nettlesword = new NettleSword(ItemIds.NETTLESWORD_, FloracraftToolMaterial.NETTLE);
+        nettlesword = new NettleSword(ItemIds.NETTLESWORD_, FloracraftToolMaterial.NETTLE);
         mossbeakseeds = new MossBeakSeeds(ItemIds.MOSSBEAKSEEDS, FloracraftBlocks.mossbeak.blockID, Block.cobblestone.blockID);
         ironpetal = new IronPetal(ItemIds.IRONPETAL);
         plantash = new PlantAsh(ItemIds.PLANTASH);
