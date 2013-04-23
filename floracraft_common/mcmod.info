@@ -1,0 +1,20 @@
+[
+{
+  "modid": "Floracraft",
+  "name": "Floracraft",
+  "description": "Everything plants!",
+  "version": "1.0.0",
+  "url": "http://www.minecraftforum.net/topic/1562387-",
+  "updateUrl": "",
+  "authorList": [
+    "nerdyturtle"
+  ],
+  "credits": "Created by nerdyturtle with textures by OraTheOwlish",
+  "logoFile": "/mods/floracraft/textures/logo/floracraftlogo.png",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
