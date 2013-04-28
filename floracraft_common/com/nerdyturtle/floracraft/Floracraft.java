@@ -35,6 +35,8 @@ public class Floracraft {
         LogHelper.init();
         //Loads Configuration
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        //Loads Dev Capes
+        CommonProxy.proxy.initCapes();
         
         
     }

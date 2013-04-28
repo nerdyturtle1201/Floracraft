@@ -19,6 +19,9 @@ public class CommonProxy implements IGuiHandler{
     public void initTileEntities(){
         
     }
+    public void initCapes(){
+        
+    }
     public void registerRenderers() {
 
         }

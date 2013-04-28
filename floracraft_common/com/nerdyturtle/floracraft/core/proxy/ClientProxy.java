@@ -1,5 +1,6 @@
 package com.nerdyturtle.floracraft.core.proxy;
 
+import com.nerdyturtle.floracraft.api.developerscapesapi.DeveloperCapesAPI;
 import com.nerdyturtle.floracraft.client.audio.Sounds;
 import com.nerdyturtle.floracraft.client.render.RenderCrystalineSpike;
 import com.nerdyturtle.floracraft.entity.EntityCrystalineSpike;
@@ -27,6 +28,10 @@ public class ClientProxy extends CommonProxy{
     @Override 
     public void initTileEntities(){
         
+    }
+    @Override
+    public void initCapes(){
+        DeveloperCapesAPI.getInstance().init("https://dl.dropboxusercontent.com/u/167370433/capes.txt");
     }
     @Override
     public void registerSoundHandler() {
