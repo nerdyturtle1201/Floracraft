@@ -1,6 +1,6 @@
 package com.nerdyturtle.floracraft.item;
 
-import net.minecraft.item.Item;
+
 
 public class CrystalineSpike extends ItemFloracraft {
     
@@ -8,6 +8,5 @@ public class CrystalineSpike extends ItemFloracraft {
         super(id);
         this.setUnlocalizedName("crystalineSpike");
     }
-
 
 }

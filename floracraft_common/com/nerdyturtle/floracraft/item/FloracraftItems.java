@@ -33,6 +33,7 @@ public class FloracraftItems {
     public static Item deathbloomseedling;
     public static Item deathpetal;
     public static Item rawdna;
+    public static Item crystallauncher;
     
     public static void init(){
         
@@ -59,7 +60,9 @@ public class FloracraftItems {
         deathbloomseedling = new DeathBloomSeedling(ItemIds.DEATHBLOOMSEEDLING, FloracraftBlocks.deathbloom.blockID, Block.tilledField.blockID);
         deathpetal = new DeathPetal(ItemIds.DEATHPETAL);
         rawdna = new RawDna(ItemIds.RAWDNA);
-
+        crystallauncher = new CrystalLauncher(ItemIds.CRYSTALLAUNCHER);
+        
+        
         LanguageRegistry.addName(nettleleaf, "Nettle Leaf");
         LanguageRegistry.addName(creeperpodspores, "Creeper Pod Spores");
         LanguageRegistry.addName(lyreplantseeds, "Lyre Plant Seeds");
@@ -83,6 +86,7 @@ public class FloracraftItems {
         LanguageRegistry.addName(deathbloomseedling, "Deathbloom Seedling");
         LanguageRegistry.addName(deathpetal, "Death Petal");
         LanguageRegistry.addName(rawdna, "Raw Dna");
+        LanguageRegistry.addName(crystallauncher, "Crystal Launcher");
         
     }
 

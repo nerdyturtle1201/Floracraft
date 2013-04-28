@@ -24,6 +24,7 @@ public class ItemIds {
     public static int WATERPEARL_DEFAULT = 10020;
     public static int WATERPEARLSEEDS_DEFAULT = 10021;
     public static int RAWDNA_DEFAULT = 10022;
+    public static int CRYSTALLAUNCHER_DEFAULT = 10023;
     
     public static int AEROLILYPETAL;
     public static int BAMBOOITEM;
@@ -48,6 +49,7 @@ public class ItemIds {
     public static int WATERPEARL;
     public static int WATERPEARLSEEDS;
     public static int RAWDNA;
+    public static int CRYSTALLAUNCHER;
 
 
 }

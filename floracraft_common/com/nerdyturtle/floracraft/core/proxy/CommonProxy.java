@@ -1,9 +1,13 @@
 package com.nerdyturtle.floracraft.core.proxy;
 
+
 import net.minecraft.entity.player.EntityPlayer;
+
 import net.minecraft.world.World;
+
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.network.IGuiHandler;
+
 
 public class CommonProxy implements IGuiHandler{
     @SidedProxy(clientSide = "com.nerdyturtle.floracraft.core.proxy.ClientProxy", serverSide= "com.nerdyturtle.floracraft.core.proxy.CommonProxy")
@@ -14,6 +18,12 @@ public class CommonProxy implements IGuiHandler{
     }
     public void initTileEntities(){
         
+    }
+    public void registerRenderers() {
+
+        }
+    public void registerSoundHandler() {
+
     }
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world,

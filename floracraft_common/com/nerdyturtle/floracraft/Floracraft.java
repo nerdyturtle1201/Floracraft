@@ -49,6 +49,7 @@ public class Floracraft {
         //Proxy information
         CommonProxy.proxy.initRenderingandTextures();
         CommonProxy.proxy.initTileEntities();
+        CommonProxy.proxy.registerRenderers();
         NetworkRegistry.instance().registerGuiHandler(instance, CommonProxy.proxy);
         //World Generator
         GameRegistry.registerWorldGenerator(new FloracraftWorldGenerator());

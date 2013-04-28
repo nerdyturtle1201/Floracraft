@@ -88,6 +88,9 @@ public class ConfigurationHandler {
                        ItemIds.RAWDNA = configuration
                                 .getItem(Strings.RAWDNA_NAME, ItemIds.RAWDNA_DEFAULT)
                                 .getInt(ItemIds.RAWDNA_DEFAULT);
+                       ItemIds.CRYSTALLAUNCHER = configuration
+                               .getItem(Strings.CRYSTALLAUNCHER_NAME, ItemIds.CRYSTALLAUNCHER_DEFAULT)
+                               .getInt(ItemIds.CRYSTALLAUNCHER_DEFAULT);
                        
                        BlockIds.AEROLILY = configuration
                                 .getItem(Strings.AEROLILY_NAME, BlockIds.AEROLILY_DEFAULT)

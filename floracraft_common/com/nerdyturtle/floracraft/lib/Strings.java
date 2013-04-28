@@ -1,6 +1,7 @@
 package com.nerdyturtle.floracraft.lib;
 
 public class Strings {
+    public static String CRYSTALLAUNCHER_NAME = "CrystalLauncher";
     public static String AEROLILYPETAL_NAME = "AerolilyPetal";
     public static String BAMBOOITEM_NAME = "Bamboo";
     public static String CALCIFIEDTENDRIL_NAME = "CalcifiedTendril";
