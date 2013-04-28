@@ -16,7 +16,7 @@ public class Sounds {
                      "crystalinespike.wav",
                      };
              for (int i = 0; i < soundFiles.length; i++){
-                 event.manager.soundPoolSounds.addSound(soundFiles[i], Floracraft.class.getResource("/mods/SenitielsSpaceMarineMod/sounds/" + soundFiles[i]));
+                 event.manager.soundPoolSounds.addSound(soundFiles[i], Floracraft.class.getResource("/mods/florcraft/sounds/" + soundFiles[i]));
              }
        
         }
