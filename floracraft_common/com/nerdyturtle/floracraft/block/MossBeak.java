@@ -18,7 +18,8 @@ import net.minecraft.world.World;
 public class MossBeak extends BlockFlower{
     
     @SideOnly(Side.CLIENT)
-    private Icon[] iconArray;
+    private Icon[] icons;
+    private String[] textureNames = new String[] { "mossBeak_1", "mossBeak_2", "mossBeak_3", "mossBeak_4", "mossBeak_5", "mossBeak_6", "mossBeak_7"};
     
     protected MossBeak(int par1, Material par2)
     {
@@ -29,10 +30,16 @@ public class MossBeak extends BlockFlower{
         this.setCreativeTab((CreativeTabs)null);
         this.setUnlocalizedName("mossBeak");
     }
+    @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
+    public void registerIcons (IconRegister iconRegister)
+    {
+        this.icons = new Icon[textureNames.length];
 
-        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
+        for (int i = 0; i < this.icons.length; ++i)
+        {
+            this.icons[i] = iconRegister.registerIcon("floracraft:" + textureNames[i]);
+        }
     }
     
    
@@ -120,7 +127,7 @@ public class MossBeak extends BlockFlower{
             par2 = 7;
         }
 
-        return this.iconArray[par2];
+        return this.icons[par2];
     }
     public int getRenderType()
     {

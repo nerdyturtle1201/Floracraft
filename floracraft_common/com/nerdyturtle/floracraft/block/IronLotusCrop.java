@@ -18,7 +18,8 @@ import net.minecraft.world.World;
 public class IronLotusCrop extends BlockFlower {
     
     @SideOnly(Side.CLIENT)
-    private Icon[] iconArray;
+    private Icon[] icons;
+    private String[] textureNames = new String[] { "ironLotus_1", "ironLotus_2", "ironLotus_3", "ironLotus_4", "ironLotus_5", "ironLotus_6", "ironLotus_7"};
     
     protected IronLotusCrop(int par1, Material par2)
     {
@@ -29,13 +30,17 @@ public class IronLotusCrop extends BlockFlower {
         this.setCreativeTab((CreativeTabs)null);
         this.setUnlocalizedName("ironLotusCrop");
     }
+    @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
+    public void registerIcons (IconRegister iconRegister)
+    {
+        this.icons = new Icon[textureNames.length];
 
-        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
+        for (int i = 0; i < this.icons.length; ++i)
+        {
+            this.icons[i] = iconRegister.registerIcon("floracraft:" + textureNames[i]);
+        }
     }
-    
-   
    
     protected boolean canThisPlantGrowOnThisBlockID(int par1)
     {
@@ -120,7 +125,7 @@ public class IronLotusCrop extends BlockFlower {
             par2 = 7;
         }
 
-        return this.iconArray[par2];
+        return this.icons[par2];
     }
     public int getRenderType()
     {

@@ -18,7 +18,8 @@ import net.minecraft.world.World;
 public class EnderOrchid extends BlockFlower{
     
     @SideOnly(Side.CLIENT)
-    private Icon[] iconArray;
+    private Icon[] icons;
+    private String[] textureNames = new String[] { "enderOrchid_1", "enderOrchid_2", "enderOrchid_3", "enderOrchid_4", "enderOrchid_5", "enderOrchid_6", "enderOrchid_7"};
     
     protected EnderOrchid(int par1, Material par2)
     {
@@ -29,12 +30,17 @@ public class EnderOrchid extends BlockFlower{
         this.setCreativeTab((CreativeTabs)null);
         this.setUnlocalizedName("enderOrchid");
     }
+    @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
+    public void registerIcons (IconRegister iconRegister)
+    {
+        this.icons = new Icon[textureNames.length];
 
-        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
+        for (int i = 0; i < this.icons.length; ++i)
+        {
+            this.icons[i] = iconRegister.registerIcon("floracraft:" + textureNames[i]);
+        }
     }
-    
    
    
     protected boolean canThisPlantGrowOnThisBlockID(int par1)
@@ -120,7 +126,7 @@ public class EnderOrchid extends BlockFlower{
             par2 = 7;
         }
 
-        return this.iconArray[par2];
+        return this.icons[par2];
     }
     public int getRenderType()
     {

@@ -18,7 +18,8 @@ import net.minecraft.world.World;
 public class LyrePlant extends BlockFlower{
     
     @SideOnly(Side.CLIENT)
-    private Icon[] iconArray;
+    private Icon[] icons;
+    private String[] textureNames = new String[] { "lyrePlant_1", "lyrePlant_2", "lyrePlant_3", "lyrePlant_4", "lyrePlant_5", "lyrePlant_6", "lyrePlant_7"};
     
     protected LyrePlant(int par1, Material par2)
     {
@@ -29,13 +30,17 @@ public class LyrePlant extends BlockFlower{
         this.setCreativeTab((CreativeTabs)null);
         this.setUnlocalizedName("lyrePlant");
     }
+    @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
+    public void registerIcons (IconRegister iconRegister)
+    {
+        this.icons = new Icon[textureNames.length];
 
-        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
+        for (int i = 0; i < this.icons.length; ++i)
+        {
+            this.icons[i] = iconRegister.registerIcon("floracraft:" + textureNames[i]);
+        }
     }
-    
-   
    
     protected boolean canThisPlantGrowOnThisBlockID(int par1)
     {
@@ -120,7 +125,7 @@ public class LyrePlant extends BlockFlower{
             par2 = 7;
         }
 
-        return this.iconArray[par2];
+        return this.icons[par2];
     }
     public int getRenderType()
     {

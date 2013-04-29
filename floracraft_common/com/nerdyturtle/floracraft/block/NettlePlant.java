@@ -18,7 +18,8 @@ import net.minecraft.world.World;
 public class NettlePlant extends BlockFlower {
     
     @SideOnly(Side.CLIENT)
-    private Icon[] iconArray;
+    private Icon[] icons;
+    private String[] textureNames = new String[] { "nettlePlant_1", "nettlePlant_2", "nettlePlant_3", "nettlePlant_4", "nettlePlant_5", "nettlePlant_6", "nettlePlant_7"};
     
     protected NettlePlant(int par1, Material par2)
     {
@@ -29,10 +30,16 @@ public class NettlePlant extends BlockFlower {
         this.setCreativeTab((CreativeTabs)null);
         this.setUnlocalizedName("nettlePlant");
     }
+    @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
+    public void registerIcons (IconRegister iconRegister)
+    {
+        this.icons = new Icon[textureNames.length];
 
-        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
+        for (int i = 0; i < this.icons.length; ++i)
+        {
+            this.icons[i] = iconRegister.registerIcon("floracraft:" + textureNames[i]);
+        }
     }
     
    
@@ -120,7 +127,7 @@ public class NettlePlant extends BlockFlower {
             par2 = 7;
         }
 
-        return this.iconArray[par2];
+        return this.icons[par2];
     }
     public int getRenderType()
     {

@@ -18,7 +18,8 @@ import net.minecraft.world.World;
 public class CreeperPod extends BlockFlower{
     
     @SideOnly(Side.CLIENT)
-    private Icon[] iconArray;
+    private Icon[] icons;
+    private String[] textureNames = new String[] { "creeperPod_1", "creeperPod_2", "creeperPod_3", "creeperPod_4", "creeperPod_5", "creeperPod_6", "creeperPod_7"};
     
     protected CreeperPod(int par1, Material par2)
     {
@@ -29,10 +30,16 @@ public class CreeperPod extends BlockFlower{
         this.setCreativeTab((CreativeTabs)null);
         this.setUnlocalizedName("creeperPod");
     }
+    @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
+    public void registerIcons (IconRegister iconRegister)
+    {
+        this.icons = new Icon[textureNames.length];
 
-        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
+        for (int i = 0; i < this.icons.length; ++i)
+        {
+            this.icons[i] = iconRegister.registerIcon("floracraft:" + textureNames[i]);
+        }
     }
     
    
@@ -120,7 +127,7 @@ public class CreeperPod extends BlockFlower{
             par2 = 7;
         }
 
-        return this.iconArray[par2];
+        return this.icons[par2];
     }
     public int getRenderType()
     {

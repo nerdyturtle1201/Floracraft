@@ -11,14 +11,15 @@ import net.minecraft.block.BlockFlower;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.item.Item; 
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
 
 public class DeathBloom extends BlockFlower {
     
     @SideOnly(Side.CLIENT)
-    private Icon[] iconArray;
+    private Icon[] icons;
+    private String[] textureNames = new String[] { "deathBloom_1", "deathBloom_2", "deathBloom_3", "deathBloom_4", "deathBloom_5", "deathBloom_6", "deathBloom_7"};
     
     protected DeathBloom(int par1, Material par2)
     {
@@ -29,10 +30,16 @@ public class DeathBloom extends BlockFlower {
         this.setCreativeTab((CreativeTabs)null);
         this.setUnlocalizedName("deathBloom");
     }
+    @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
+    public void registerIcons (IconRegister iconRegister)
+    {
+        this.icons = new Icon[textureNames.length];
 
-        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
+        for (int i = 0; i < this.icons.length; ++i)
+        {
+            this.icons[i] = iconRegister.registerIcon("floracraft:" + textureNames[i]);
+        }
     }
     
    
@@ -120,7 +127,7 @@ public class DeathBloom extends BlockFlower {
             par2 = 7;
         }
 
-        return this.iconArray[par2];
+        return this.icons[par2];
     }
     public int getRenderType()
     {

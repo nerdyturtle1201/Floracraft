@@ -18,7 +18,8 @@ import net.minecraft.world.World;
 public class SkullBramble extends BlockFlower {
     
     @SideOnly(Side.CLIENT)
-    private Icon[] iconArray;
+    private Icon[] icons;
+    private String[] textureNames = new String[] { "skullBramble_1", "skullBramble_2", "skullBramble_3", "skullBramble_4", "skullBramble_5", "skullBramble_6", "skullBramble_7"};
     
     protected SkullBramble(int par1, Material par2)
     {
@@ -29,10 +30,16 @@ public class SkullBramble extends BlockFlower {
         this.setCreativeTab((CreativeTabs)null);
         this.setUnlocalizedName("skullBramble");
     }
+    @Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IconRegister iconRegister) {
+    public void registerIcons (IconRegister iconRegister)
+    {
+        this.icons = new Icon[textureNames.length];
 
-        blockIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
+        for (int i = 0; i < this.icons.length; ++i)
+        {
+            this.icons[i] = iconRegister.registerIcon("floracraft:" + textureNames[i]);
+        }
     }
     
    
@@ -120,7 +127,7 @@ public class SkullBramble extends BlockFlower {
             par2 = 7;
         }
 
-        return this.iconArray[par2];
+        return this.icons[par2];
     }
     public int getRenderType()
     {
