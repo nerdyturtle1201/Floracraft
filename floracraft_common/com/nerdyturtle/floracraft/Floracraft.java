@@ -2,6 +2,7 @@ package com.nerdyturtle.floracraft;
 
 import com.nerdyturtle.floracraft.block.FloracraftBlocks;
 import com.nerdyturtle.floracraft.configuration.ConfigurationHandler;
+import com.nerdyturtle.floracraft.core.handlers.FloracraftLocalizationHandler;
 import com.nerdyturtle.floracraft.core.helpers.LogHelper;
 import com.nerdyturtle.floracraft.core.proxy.CommonProxy;
 import com.nerdyturtle.floracraft.gen.FloracraftWorldGenerator;
@@ -37,6 +38,8 @@ public class Floracraft {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         //Loads Dev Capes
         CommonProxy.proxy.initCapes();
+        //Loads Localizations(Languages)
+        FloracraftLocalizationHandler.loadLanguages();
         
         
     }
