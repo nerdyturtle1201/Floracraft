@@ -20,7 +20,7 @@ public class NettleSword extends FloracraftTool {
 
     public NettleSword(int par1, FloracraftToolMaterial par2enumtoolmaterial) {
         super(par1, 1, par2enumtoolmaterial, blocksEffectiveAgainst);
-        this.setUnlocalizedName("aerolilyPetal");
+        this.setUnlocalizedName("nettleSword");
 
     }
 
@@ -44,7 +44,7 @@ public class NettleSword extends FloracraftTool {
       @SideOnly(Side.CLIENT)
       public void registerIcons(IconRegister iconRegister) {
 
-          iconIndex = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
+          itemIcon = iconRegister.registerIcon("floracraft" + ":" + this.getUnlocalizedName().substring(5));
       }
 
 }
