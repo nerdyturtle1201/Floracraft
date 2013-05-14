@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+<comment>English (en_US) Localization File</comment>
+<entry key="item.aerolilyPetal.name">Aerolily Petal</entry>
+<entry key="item.calcifiedTendril.name">Calcified Tendril</entry>
+<entry key="item.creeperPodSpores.name">Creeper Pod Spores</entry>
+<entry key="item.crystalineSpike.name">Crystaline Spike</entry>
+<entry key="item.crystalLauncher.name">Crystal Launcher</entry>
+<entry key="item.crystalSeed.name">Crystal Seed</entry>
+<entry key="item.deathBloomSeedling.name">Death Bloom Seedling</entry>
+<entry key="item.deathPetal.name">Death Petal</entry>
+<entry key="item.enderSeeds.name">Ender Seeds</entry>
+<entry key="item.ironLotusSeeds.name">Iron Lotus Seeds</entry>
+<entry key="item.ironPetal.name">Iron Petal</entry>
+<entry key="item.lavaPearl.name">Lava Pearl</entry>
+<entry key="item.lavaPearlSeeds.name">Lava Pearl Seeds</entry>
+<entry key="item.lyrePlantSeeds.name">Lyre Plant Seeds</entry>
+<entry key="item.mossBeakSeeds.name">Mossbeak Seeds</entry>
+<entry key="item.nettleLeaf.name">Nettle Leaf</entry>
+<entry key="item.nettleSeeds.name">Nettle Seeds</entry>
+<entry key="item.nettleSword.name">Nettle Sword</entry>
+<entry key="item.plantAsh.name">Plant Ash</entry>
+<entry key="item.plantMutagen.name">Plant Mutagen</entry>
+<entry key="item.rawDna.name">Raw DNA</entry>
+<entry key="item.researchPapers.name">Research Papers</entry>
+<entry key="item.waterPearl.name">Water Pearl</entry>
+<entry key="item.waterPearlSeeds.name">Water Pearl Seeds</entry>
+<entry key="tile.aeroLily.name">Aerolily</entry>
+<entry key="tile.bioFlower.name">Bio-Flower</entry>
+<entry key="tile.deathNettle.name">Death Nettle</entry>
+<entry key="tile.flameThorn.name">Flame Thorn</entry>
+<entry key="tile.ironLotus.name">Iron Lotus</entry>
+<entry key="tile.nettle.name">Nettle</entry>
+<entry key="tile.researchTable.name">Research Table</entry>
+<entry key="container.researchTable">Research Table</entry>
+</properties>

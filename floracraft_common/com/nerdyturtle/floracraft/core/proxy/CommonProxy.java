@@ -19,7 +19,13 @@ public class CommonProxy implements IGuiHandler{
     public void initTileEntities(){
         
     }
+    public int initArmor(String string){
+        return 0;
+    }
     public void initCapes(){
+        
+    }
+    public void initTickHandlers(){
         
     }
     public void registerRenderers() {

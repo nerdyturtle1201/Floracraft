@@ -25,6 +25,11 @@ public class ItemIds {
     public static int WATERPEARLSEEDS_DEFAULT = 10021;
     public static int RAWDNA_DEFAULT = 10022;
     public static int CRYSTALLAUNCHER_DEFAULT = 10023;
+    public static int FARMHELMET_DEFAULT = 10024;
+    public static int FARMCHEST_DEFAULT = 10025;
+    public static int FARMLEGS_DEFAULT = 10026;
+    public static int FARMBOOTS_DEFAULT = 10027;
+    public static int  RESEARCHPAPERS_DEFAULT = 10028;
     
     public static int AEROLILYPETAL;
     public static int BAMBOOITEM;
@@ -50,6 +55,11 @@ public class ItemIds {
     public static int WATERPEARLSEEDS;
     public static int RAWDNA;
     public static int CRYSTALLAUNCHER;
+    public static int FARMHELMET;
+    public static int FARMCHEST;
+    public static int FARMLEGS;
+    public static int FARMBOOTS;
+    public static int RESEARCHPAPERS;
 
 
 }

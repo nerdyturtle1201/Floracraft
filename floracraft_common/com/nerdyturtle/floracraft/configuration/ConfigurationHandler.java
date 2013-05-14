@@ -91,6 +91,18 @@ public class ConfigurationHandler {
                        ItemIds.CRYSTALLAUNCHER = configuration
                                .getItem(Strings.CRYSTALLAUNCHER_NAME, ItemIds.CRYSTALLAUNCHER_DEFAULT)
                                .getInt(ItemIds.CRYSTALLAUNCHER_DEFAULT);
+                       ItemIds.FARMHELMET = configuration
+                               .getItem(Strings.FARMHELMET_NAME, ItemIds.FARMHELMET_DEFAULT)
+                               .getInt(ItemIds.FARMHELMET_DEFAULT);
+                       ItemIds.FARMCHEST = configuration
+                               .getItem(Strings.FARMCHEST_NAME, ItemIds.FARMCHEST_DEFAULT)
+                               .getInt(ItemIds.FARMCHEST_DEFAULT);
+                       ItemIds.FARMLEGS = configuration
+                               .getItem(Strings.FARMLEGS_NAME, ItemIds.FARMLEGS_DEFAULT)
+                               .getInt(ItemIds.FARMLEGS_DEFAULT);
+                       ItemIds.FARMBOOTS = configuration
+                               .getItem(Strings.FARMBOOTS_NAME, ItemIds.FARMBOOTS_DEFAULT)
+                               .getInt(ItemIds.FARMBOOTS_DEFAULT);
                        
                        BlockIds.AEROLILY = configuration
                                 .getItem(Strings.AEROLILY_NAME, BlockIds.AEROLILY_DEFAULT)

@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 public class DeathNettle extends BlockFlower{
     protected DeathNettle(int id, Material material) {
-        super(id, material);
+        super(id, Material.plants);
         this.setUnlocalizedName("deathNettle");
 }
 

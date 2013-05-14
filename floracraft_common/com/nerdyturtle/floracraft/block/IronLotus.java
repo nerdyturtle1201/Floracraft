@@ -9,7 +9,7 @@ import net.minecraft.client.renderer.texture.IconRegister;
 public class IronLotus extends BlockFlower{
     
     public IronLotus(int id, Material material){
-        super(id, material);
+        super(id, Material.plants);
         this.setUnlocalizedName("ironLotus");
     }
     @Override

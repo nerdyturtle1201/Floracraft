@@ -9,7 +9,7 @@ import net.minecraft.client.renderer.texture.IconRegister;
 public class Bioflower extends BlockFlower{
     
     public Bioflower(int id, Material material){
-        super(id, material);
+        super(id, Material.plants);
         this.setUnlocalizedName("bioflower");
     }
     @Override

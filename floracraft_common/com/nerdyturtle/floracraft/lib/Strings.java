@@ -45,5 +45,10 @@ public class Strings {
     public static String SUNDEW_NAME = "Sundew";
     public static String WATERPEARLPLANT_NAME = "WaterPearlPlant";
     public static String RAWDNA_NAME = "RawDna";
+    public static String FARMHELMET_NAME = "FarmHelmet";
+    public static String FARMCHEST_NAME = "FarmChest";
+    public static String FARMLEGS_NAME = "FarmLegs";
+    public static String FARMBOOTS_NAME = "FarmBoots";
+    public static String RESEARCHTABLEGUI_NAME = "Research Table";
 
 }

@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 public class Nettle extends BlockFlower{
     
     public Nettle(int id, Material material){
-        super(id, material);
+        super(id, Material.plants);
         this.setUnlocalizedName("nettle");
     }
     public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)

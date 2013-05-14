@@ -1,14 +1,19 @@
 package com.nerdyturtle.floracraft;
 
+import net.minecraftforge.common.MinecraftForge;
+
 import com.nerdyturtle.floracraft.block.FloracraftBlocks;
 import com.nerdyturtle.floracraft.configuration.ConfigurationHandler;
 import com.nerdyturtle.floracraft.core.handlers.FloracraftLocalizationHandler;
+import com.nerdyturtle.floracraft.core.helpers.FloracraftChestGenHelper;
+import com.nerdyturtle.floracraft.core.helpers.FloracraftDropsHelper;
 import com.nerdyturtle.floracraft.core.helpers.LogHelper;
 import com.nerdyturtle.floracraft.core.proxy.CommonProxy;
 import com.nerdyturtle.floracraft.gen.FloracraftWorldGenerator;
 import com.nerdyturtle.floracraft.item.FloracraftItems;
 import com.nerdyturtle.floracraft.network.FloracraftPacketHandler;
 import com.nerdyturtle.floracraft.recipe.FloracraftRecipes;
+import com.nerdyturtle.floracraft.tick.PlayerTickHandler;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -22,12 +27,14 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+
 @Mod(modid = "Floracraft", name = "Floracraft", version = "1.0.0")
 @NetworkMod(channels = {"Floracraft"}, clientSideRequired = true, serverSideRequired = false, packetHandler = FloracraftPacketHandler.class)
 
 public class Floracraft {
     @Instance("Floracraft")
     public static Floracraft instance;
+
     
     
     @PreInit
@@ -40,11 +47,18 @@ public class Floracraft {
         CommonProxy.proxy.initCapes();
         //Loads Localizations(Languages)
         FloracraftLocalizationHandler.loadLanguages();
+        //Loads Tick Handlers
+        CommonProxy.proxy.initTickHandlers();
+
         
         
     }
     @Init
     public void load(FMLInitializationEvent event){
+        //Loads Drop Handler
+        MinecraftForge.EVENT_BUS.register(new FloracraftDropsHelper());
+        //Loads Chest Gen Handler
+        FloracraftChestGenHelper.init();
         //Loads Recipes
         FloracraftRecipes.init();
         //Loads Items

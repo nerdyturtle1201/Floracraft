@@ -53,7 +53,7 @@ public class FloracraftBlocks {
         nettleplant = new NettlePlant(BlockIds.NETTLEPLANT, Material.plants);
         deathbloom = new DeathBloom(BlockIds.DEATHBLOOM, Material.plants);
         enderorchid = new EnderOrchid(BlockIds.ENDERORCHID, Material.plants);
-        //researchtable = new ResearchTable(BlockIds.RESEARCHTABLE, Material.iron);
+        researchtable = new ResearchTable(BlockIds.RESEARCHTABLE, Material.iron);
         
         
         GameRegistry.registerBlock(bioflower);

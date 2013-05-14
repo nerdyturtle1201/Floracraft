@@ -34,6 +34,12 @@ public class FloracraftItems {
     public static Item deathpetal;
     public static Item rawdna;
     public static Item crystallauncher;
+    public static Item FarmHelmet;
+    public static Item FarmChest;
+    public static Item FarmLegs;
+    public static Item FarmBoots;
+    public static Item researchpapers;
+
     
     public static void init(){
         
@@ -61,33 +67,11 @@ public class FloracraftItems {
         deathpetal = new DeathPetal(ItemIds.DEATHPETAL);
         rawdna = new RawDna(ItemIds.RAWDNA);
         crystallauncher = new CrystalLauncher(ItemIds.CRYSTALLAUNCHER);
-        
-        
-        LanguageRegistry.addName(nettleleaf, "Nettle Leaf");
-        LanguageRegistry.addName(creeperpodspores, "Creeper Pod Spores");
-        LanguageRegistry.addName(lyreplantseeds, "Lyre Plant Seeds");
-        LanguageRegistry.addName(waterpearlseeds, "Water Pearl Seeds");
-        LanguageRegistry.addName(lavapearlseeds, "Lava Pearl Seeds");
-        LanguageRegistry.addName(nettlesword, "Nettle Sword");
-        LanguageRegistry.addName(mossbeakseeds, "Mossbeak Seeds");
-        LanguageRegistry.addName(ironpetal, "Iron Petal");
-        LanguageRegistry.addName(plantash, "Plant Ash");
-        LanguageRegistry.addName(plantmutagen, "Plant Mutagen");
-        LanguageRegistry.addName(lavapearl, "Lava Pearl");
-        LanguageRegistry.addName(waterpearl, "Water Pearl");
-        LanguageRegistry.addName(bambooitem, "Bamboo");
-        LanguageRegistry.addName(ironseeds, "Iron Seeds");
-        LanguageRegistry.addName(aerolilypetal, "Aerolily Petal");
-        LanguageRegistry.addName(crystalinespike, "Crystaline Spike");
-        LanguageRegistry.addName(crystalseed, "Crystal Seed");
-        LanguageRegistry.addName(calcifiedtendril, "Calcified Tendril");
-        LanguageRegistry.addName(nettleseeds, "Nettle Seeds");
-        LanguageRegistry.addName(enderseeds, "Ender Seeds");
-        LanguageRegistry.addName(deathbloomseedling, "Deathbloom Seedling");
-        LanguageRegistry.addName(deathpetal, "Death Petal");
-        LanguageRegistry.addName(rawdna, "Raw Dna");
-        LanguageRegistry.addName(crystallauncher, "Crystal Launcher");
-        
+        //FarmHelmet = new FarmArmor(ItemIds.FARMHELMET, FarmArmour, CommonProxy.proxy.initArmor("Farm"), 0).setUnlocalizedName("Tut Helmet");
+        //FarmChest = new FarmArmor(ItemIds.FARMCHEST, FarmArmour, CommonProxy.proxy.initArmor("Farm"), 1).setUnlocalizedName("Tut Plate");
+        //FarmLegs = new FarmArmor(ItemIds.FARMLEGS, FarmArmour, CommonProxy.proxy.initArmor("Farm"), 2).setUnlocalizedName("Tut Legs");
+        // FarmBoots = new FarmArmor(ItemIds.FARMBOOTS, FarmArmour, CommonProxy.proxy.initArmor("Farm"), 3).setUnlocalizedName("Tut Boots");
+        researchpapers = new ResearchPapers(ItemIds.RESEARCHPAPERS);  
     }
 
 }
